@@ -156,11 +156,11 @@ var updateSidebar = function(marker) {
 
         if (d[idx]) {
 
-          // var source = "<em class='normal'>" + d[idx + 'Source'] + '</em>';
+           var source = "<em class='normal'>" + d[idx + 'Source'] + '</em>';
 
-          // if (source && d[idx + 'SourceLink']) {
-          //   source = "<a href='" + d[idx + 'SourceLink'] + "' target='_blank'>" + source + "</a>";
-          // }
+           if (source && d[idx + 'SourceLink']) {
+             source = "<a href='" + d[idx + 'SourceLink'] + "' target='_blank'>" + source + "</a>";
+           }
 
           var a = $('<a/>', {
             href: d[idx],
@@ -419,11 +419,11 @@ function onEachFeature(feature, layer) {
   map.getPane('pane_PohonAdopsiMinastahura_4').style.zIndex = 1;
   map.getPane('pane_PohonAdopsiMinastahura_4').style['mix-blend-mode'] = 'normal';
 
-  layer_BatasKawasan = L.geoJson(json_BatasKawasanTahuraSultanSyarifQasim_3,{
+  layer_BatasKawasan = L.geoJson(bataskawasanminastahura,{
     attribution: '',
     interactive: true,
-    dataVar: 'json_BatasKawasanTahuraSultanSyarifQasim_3',
-    layerName: 'layer_BatasKawasanTahuraSultanSyarifQasim_3',
+    dataVar: 'bataskawasanminastahura',
+    layerName: 'bataskawasanminastahura',
     style: style_bataskawasan,
     onEachFeature: onEachFeature,
     //pane: 'pane_PohonAdopsiMinastahura_4'
@@ -473,7 +473,7 @@ info.addTo(map);
   // Add data & GitHub links
   map.attributionControl.setPrefix('Download <a href="'
     + dataLocation + '" target="_blank">data</a> or \
-    view <a href="https://github.com/Simarmata12Soni/webmap_adopsipohon1_" target="_blank">code on\
+    view <a href="https://lulufiryal.github.io/KPH_MinasTahura/" target="_blank">code on\
     GitHub</a> | created with <a href="http://leafletjs.com" title="A JS library\
     for interactive maps">Leaflet</a>');
 
