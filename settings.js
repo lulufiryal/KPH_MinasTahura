@@ -3,8 +3,8 @@
 const dataLocation = 'data/minastahura-ona.csv';
 
 // Map's initial center, and zoom level
-const mapCenter = [0.800, 101.400];
-const mapZoom = 11;
+const mapCenter = [0.6854, 101.4180];
+const mapZoom = 14;
 
 // Marker icon height and width
 const iconHeight = 30;
